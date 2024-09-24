@@ -1,0 +1,18 @@
+<h1>Answer view 🚀</h1>
+
+<div class="chat-container">
+  <div class="chat-message user-message">
+    <p class="message-content"><%= @question %></p>
+    <span class="message-author">- You</span>
+  </div>
+
+  <!-- Answer -->
+  <div class="chat-message coach-message">
+    <p class="message-content"><%= @answer %></p>
+    <span class="message-author">- Your coach</span>
+  </div>
+</div>
+
+<div class="new-question">
+  <%= link_to "Ask a new question", questions_path, class: "btn-ask-new" %>
+</div>
